@@ -1,7 +1,18 @@
-function addOptiLanguage(langName){
+
+function addElement(langName){
     const li = document.createElement('li');
     li.appendChild(document.createTextNode(langName));
     document.querySelector('.language').appendChild(li)
-    }
-    addOptiLanguage('golang')
-   
+
+}
+addElement('CSS')
+
+
+
+
+const thirdName = document.querySelector("li:nth-child(3)")
+const changeNameEle = document.createElement('li')
+changeNameEle.textContent = 'Mojo'
+thirdName.replaceWith(changeNameEle)
+
+
