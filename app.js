@@ -7,28 +7,21 @@ function addElement(langName){
 }
 addElement('CSS')
 
-
-
-
-const thirdName = document.querySelector("li:nth-child(3)")
-const changeNameEle = document.createElement('li')
-changeNameEle.textContent = 'Mojo'
-thirdName.replaceWith(changeNameEle)
-
-
-
 function addOptiLanguage(langName){
     const li = document.createElement('li');
     li.appendChild(document.createTextNode(langName));
     document.querySelector('.language').appendChild(li)
 
     }
-    addOptiLanguage('golang')
+    addOptiLanguage('Golang')
 
-    
-const changeName = document.querySelector("li:last-child")
-const nameRep = document.createElement('li')
-nameRep.textContent = 'HTML'
-changeName.replaceWith(nameRep)
+const repName = document.querySelector("li:first-child")
+const elementName = document.createElement('li')
+elementName.textContent = "Java"
+repName.replaceWith(elementName)
 
+const thirdName = document.querySelector("li:nth-child(4)")
+const changeNameEle = document.createElement('li')
+changeNameEle.textContent = 'Mojo'
+thirdName.replaceWith(changeNameEle)
 
